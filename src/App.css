@@ -32,7 +32,7 @@
   }
 
   .hero-car-img {
-    width: 100%; /* Prevent car from overflowing screen */
+    width: 100%; /* Prevent car from overflowing screen for navv bar */
   }
 
   .hero-btns {

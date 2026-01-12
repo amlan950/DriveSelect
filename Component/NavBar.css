@@ -1,0 +1,113 @@
+/* Navbar Container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  z-index: 1000; /* Keeps it on top of the home page */
+  
+  /* Give it a default background so it doesn't look like text is clashing */
+  background: #0f172a; 
+  display: flex;
+  align-items: center;
+}
+/* Scrolled State */
+.navbar.scrolled {
+  height: 70px;         /* Becomes slightly thinner */
+  background: rgba(15, 23, 42, 0.9); /* Dark background with transparency */
+  backdrop-filter: blur(12px);       /* The "Glass" effect */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.logo-accent {
+  color: #3b82f6; /* Electric Blue */
+}
+
+/* Navigation Links */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-weight: 500;
+  font-size: 0.95rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #3b82f6;
+}
+
+/* Animated Hover Underline */
+.nav-item a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #3b82f6;
+  transition: width 0.3s ease;
+}
+
+.nav-item a:hover::after {
+  width: 100%;
+}
+
+/* Buttons */
+.nav-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #3b82f6;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background: #2563eb;
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+}

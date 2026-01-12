@@ -1,0 +1,16 @@
+/* App.css - The most important file for layout */
+
+/* 1. Remove all default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 3. If you are using Vite, remove these specific limits */
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left; /* Vite often sets this to center */
+}

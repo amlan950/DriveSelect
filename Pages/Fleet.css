@@ -1,0 +1,109 @@
+.fleet-section {
+  padding: 100px 8%;
+  background: #0f172a;
+  color: white;
+  min-height: 100vh;
+}
+
+.fleet-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* Car Card Styling */
+.car-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-10px);
+  border-color: #3b82f6;
+}
+
+.car-image {
+  position: relative;
+  height: 220px;
+}
+
+.car-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #3b82f6;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.car-details {
+  padding: 25px;
+}
+
+.car-details h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.car-specs {
+  display: flex;
+  gap: 20px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 20px;
+}
+
+.car-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #3b82f6;
+}
+
+.per-day {
+  color: #94a3b8;
+  font-size: 0.8rem;
+}
+
+.btn-rent {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-rent:hover {
+  background: #2563eb;
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+}

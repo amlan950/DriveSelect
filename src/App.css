@@ -14,3 +14,41 @@
   padding: 0;
   text-align: left; /* Vite often sets this to center */
 }
+/* Home Section Mobile */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column-reverse; /* Put image on top or bottom */
+    text-align: center;
+    padding-top: 120px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem; /* Smaller text for mobile */
+  }
+
+  .hero-image-container {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hero-car-img {
+    width: 100%; /* Prevent car from overflowing screen */
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+}
+
+/* Fleet Grid Mobile */
+@media (max-width: 480px) {
+  .fleet-grid {
+    grid-template-columns: 1fr; /* Single column on small phones */
+    padding: 0 10px;
+  }
+  
+  .admin-card {
+    padding: 20px;
+    width: 95%;
+  }
+}
